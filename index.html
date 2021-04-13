@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+</head>
+<body>
+    <h1 id  = "title">Job Survey Form</h1>
+    <p id = "description">Thank you for taking the time to share this information with us</p>
+    <form id = "survey-form" action = "/action.php">
+    <span class = "format-labels"><label for= "name" id = "name-label">Name</label></span>
+      <br>
+      <input id ="name" type = "text" placeholder = "Enter your name" name = "name" required> 
+      <br>
+      <label for = "email" id = "email-label">Email</label>
+      <br>
+      <input id = "email" type = "email" placeholder = "Enter your email" name = "email" required>
+      <br>
+      <label for = "number" id  = "number-label">Age (optional)</label>
+      <br>
+      <input id = "number" type = "number" placeholder = "Age" min = "16" max = "65">
+      <br>
+      <p>What is your current work field?</p>
+      <select id = "dropdown" name = "current-field">
+        <option value = "it">IT</option>
+        <option value = "finance">Finance</option>
+        <option value = "marketing">Marketing</option>
+        <option value = "business">Business</option>
+        <option value = "law">Law</option>
+        <option value = "medicine">Medicine</option>
+        <option value = "government">Government</option>
+        <option value = "customer-care">Customer Care</option>
+        <option value = "sales">Sales</option>
+      </select>
+      <p>Would you recommend this work field to a friend?</p>
+      <input id = "definitely" type ="radio" name = "recommend-field" value = "definitely">
+      <label for = "definitely">Definitely</label>
+      <br>
+      <input id = "maybe" type = "radio" name = "recommend-field" value = "maybe">
+      <label for = "maybe">Maybe</label>
+      <br>
+      <input id = "not-sure" type = "radio" name = "recommend-field" value = "not-sure">
+      <label for = "not-sure">Not sure</label>
+      
+      <p>Which is the work field that you would like to work in?</p>
+      <input type = "checkbox" id = "it-software" name = "dream-field" value = "it-software">
+      <label for = "it-software">IT software<label>
+        <br>
+        <input type = "checkbox" id = "it-hardware" name = "dream-field" value = "it-hardware">
+      <label for = "it-hardware">IT hardware<label>
+        <br>
+        <input type = "checkbox" id = "finance" name = "dream-field" value = "finance">
+      <label for = "finance">Finance<label>
+        <br>
+        <input type = "checkbox" id = "marketing" name = "dream-field" value = "marketing">
+      <label for = "marketing">Marketing<label>
+        <br>
+        <input type = "checkbox" id = "business" name = "dream-field" value = "business">
+      <label for = "business">Business<label>
+        <br>
+        <input type = "checkbox" id = "law" name = "dream-field" value = "law">
+      <label for = "law">Law<label>
+        <br>
+        <input type = "checkbox" id = "government" name = "dream-field" value = "government">
+      <label for = "government">Government<label>
+        <br>
+        <input type = "checkbox" id = "medicine" name = "dream-field" value = "medicine">
+      <label for = "medicine">Medicine<label>
+        <br>
+        <input type = "checkbox" id = "customer-care" name = "dream-field" value = "customer-care">
+      <label for = "customer-care">Customer-care<label>
+        <br>
+         <input type = "checkbox" id = "sales" name = "dream-field" value = "sales">
+      <label for = "sales">Sales<label>
+        <br>
+        <p>Any other comments about the Romanian job market?</p>
+        <br>
+        <textarea id = "text-area" name = "comments" rows = "5" cols = "60" placeholder = "Enter your comment here...">
+        </textarea>
+        <br>
+        <input id = "submit" type = "submit">
+    </form>
+</body>
+</html>

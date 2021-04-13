@@ -1,0 +1,66 @@
+*,*::before, *::after{
+    box-sizing:border-box;
+  }
+  
+  body{
+     background-image:url("https://store-images.s-microsoft.com/image/apps.46003.14259451864568504.ad5e5d07-0fbb-46ed-b9b6-a1b781645691.2ebcfa4e-172c-43d3-bf01-2d9a2a94e897?mode=scale&q=90&h=1080&w=1920");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    
+   }
+  
+  #title, #description {
+    font-family:sans-serif;
+    text-align:center;
+    color:#312821;
+  }
+  
+  #survey-form{
+    font-family:sans-serif;
+    width:35%;
+    margin:auto;
+    background-color:#16ADB4;
+    padding:2%;
+    border-radius:1%;
+    color: #312821;
+    font-weight:bold;
+    opacity:.9;
+  }
+  
+  #name, #email, #number {
+    width:100%;
+    height:28px;
+    margin-top:7px;
+    margin-bottom:20px;
+    padding-left:7px;
+   }
+  #dropdown {
+    padding:5px;  
+  }
+  
+  #text-area{
+    width:100%;
+    border:0;
+    padding-left:7px;
+    font-size:15px;
+  }
+  
+  input[type="checkbox"], input[type="radio"]{
+    transform:scale(1.1);  
+  }
+  #submit{
+    width:100%;
+    height:30px;
+    font-weight:bold;
+    border:none;
+    cursor:pointer;
+    color:#312821;
+    border-radius:3px; 
+  }
+  #name, #email, #number, #dropdown{
+     border:none;
+    border-radius:5px;
+  }
+  
+  
